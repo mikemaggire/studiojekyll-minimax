@@ -1,0 +1,71 @@
+# Bienvenue dans le StudioJekyll 
+#
+# Ce fichier de configuration est utilisé pour définir les paramètres qui 
+# affectent tout votre site / blog. Ces valeurs n'ont pas vocation à être
+# souvent modifiées.
+#
+
+########################
+# Configuration initiale
+########################
+# C'est ici que vous définissez les paramètres initiaux de vore nouveau site. 
+# Sivous regardez dans vos fichiers HTML, vous verrez qu'ils y accedent
+# via {{ site.title }}, {{ site.email }}, et ainsi de suite.
+
+title: Le titre de votre site
+description: Rédigez une description parlante de votre site. Vous pouvez éditer ce texte dans le fichier '_config.yml'. Il apparaitra dans les metadonnées des entêtes des pages de votre site (utilisé par le référencement Google) et dans la description de votre flux RSS. 
+
+# About / Contact
+# Seul le nom est obligatoire
+author:
+  name: Votre pseudo
+  email: votre-email@example.com
+  twitter_username: votre_userid_twitter
+  github_username:  votre_userid_twitter
+
+# A noter que l'URL de votre site publié doit être configurer dans le fichier 
+# de configuration des publication, _config_test.yml et _config_prod.yml qui
+# se trouvent dans le repertoire _studiojekyll
+
+########################
+# Les variables suivantes ne sont pas à modifier
+########################
+
+# encoding & format
+# se référer à http://shopify.github.io/liquid/filters/date/ pour personnaliser le format de date
+encoding: utf-8
+lang: fr-fr
+date_format: "%d/%m/%Y"
+timezone: Europe/Paris
+markdown: kramdown
+
+# Extension utilisées
+plugins:
+ - jekyll-feed
+ - emoji_for_jekyll
+ - jekyll-sitemap
+
+# Exclusions spécifiques à VS
+# Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
+exclude:
+ - LICENSE.txt
+ - TODO.md
+ - README.md
+ - package.json
+ - bs-config.json
+ - deploy2prod.bat
+ - deploy2test.bat
+ - Gemfile
+ - Gemfile.lock
+ - node_modules
+ - vendor/bundle/
+ - vendor/cache/
+ - vendor/gems/
+ - vendor/ruby/
+
+# Par commodité, nous stockons les sources des pages dans le repertoire '_pages'
+# Nous forcons le traitement de .htaccess
+# A noter que la page index.md doit elle rester à la racine du site   
+include: 
+ - _pages
+ - .htaccess
