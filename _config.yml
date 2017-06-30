@@ -1,9 +1,8 @@
-# Bienvenue dans le StudioJekyll 
+# Bienvenue dans StudioJekyll 
 #
 # Ce fichier de configuration est utilisé pour définir les paramètres qui 
 # affectent tout votre site / blog. Ces valeurs n'ont pas vocation à être
-# souvent modifiées.
-#
+# modifiées souvent.
 
 ########################
 # Configuration initiale
@@ -13,41 +12,76 @@
 # via {{ site.title }}, {{ site.email }}, et ainsi de suite.
 
 title: Le titre de votre site
+tagline: Votre tagline
 description: Rédigez une description parlante de votre site. Vous pouvez éditer ce texte dans le fichier '_config.yml'. Il apparaitra dans les metadonnées des entêtes des pages de votre site (utilisé par le référencement Google) et dans la description de votre flux RSS. 
 
-# About / Contact
+# References de l'auteur du site
 # Seul le nom est obligatoire
+# Les id sont utilisés pour faire apparaitre mes boutons réseaux sociaux sur le site
 author:
   name: Votre pseudo
+  url: https://twitter.com/mikemaggire
   email: votre-email@example.com
-  twitter_username: votre_userid_twitter
-  github_username:  votre_userid_twitter
+  twitter_id: mikemaggire
+  github_id:  mikemaggire
+  #gplus_id: +votre_id
+  #facebook_id: votre_id
+  #linkedin_id: votre_id
 
 # A noter que l'URL de votre site publié doit être configurer dans le fichier 
 # de configuration des publication, _config_test.yml et _config_prod.yml qui
 # se trouvent dans le repertoire _studiojekyll
 
-########################
+############################################################ VERSION
+# NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
+# au moment du deploiement en test et en prod
+# Le numéro z est incrémenté à chaque build de l'environnement de test
+# Le numéro y est incrémenté à chaque build de l'environnement de prod
+# Pour incrémenter le numéro de version majeur (x), utilisez la commande
+# 'npm version major' en ouvrant une console au niveau du repertoire racine de votre sire
+
+############################################################ COMMENTAIRES
+# Pour activer DISQUS à la fin des articles 
+# renseignez votre identifiant DISQUS (voir https://disqus.com/) 
+# en face de la variable 'shortname' ci-après.
+# Plus d'explications : http://wiki.maggire.net/blogging-studio-jekyll/2017/06/25/comment-activer-commentaires.html
+# Pour désactiver DISQUS, mettez les deux lignes suivantes en commentaire
+# disqus:
+#  shortname: blogging-studio-jekyll
+
+############################################################ ANALYTICS
+# Pour activer Google Analytics sur vos pages
+# Sinon mettez cette ligne en commentaire
+# google_analytics: UA-99999999-9
+
+############################################################
 # Les variables suivantes ne sont pas à modifier
-########################
+############################################################
 
 # encoding & format
 # se référer à http://shopify.github.io/liquid/filters/date/ pour personnaliser le format de date
 encoding: utf-8
-lang: fr-fr
+lang: fr
 date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
 
+# le format type des permalink
+permalink: /blog/:categories/:title.html
+
 # Extension utilisées
 plugins:
  - jekyll-feed
- - emoji_for_jekyll
+ - jemoji
  - jekyll-sitemap
+
+# Nous forcons le traitement de .htaccess
+include: 
+  - .htaccess
 
 # Exclusions spécifiques à VS
 # Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
-exclude:
+exclude: 
  - LICENSE.txt
  - TODO.md
  - README.md
@@ -63,9 +97,7 @@ exclude:
  - vendor/gems/
  - vendor/ruby/
 
-# Par commodité, nous stockons les sources des pages dans le repertoire '_pages'
-# Nous forcons le traitement de .htaccess
-# A noter que la page index.md doit elle rester à la racine du site   
-include: 
- - _pages
- - .htaccess
+# Traitement du repertoire _pages
+collections:
+  pages:
+    output: true

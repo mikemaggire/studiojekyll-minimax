@@ -1,6 +1,7 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+# Si vous souhaitez que la page d'acceuil devotre site soit le blog,
+# alors vous n'avez rien à modifier ici.
+# Sinon li vous suffit de remplacer le layout pas 'page'
+# et de completer le contenu de cette page
+layout: bloglayout
 ---

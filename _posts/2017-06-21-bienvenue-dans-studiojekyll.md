@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Bienvenue dans StudioJekyll !"
-date:   2017-06-22 17:34:00 +0200
+tags: tag1 tag2
+author: votre_nom_ici
+title:  Bienvenue dans Minimax, le modèle de site StudioJekyll
 ---
-# Bienvenue dans Minimax, le modèle de site StudioJekyll
-
 Ce modèle de site est directement opérationnel pour être utilisé en **français**, avec **Visual Studio Code**, sous **Windows**.
 
 Il intègre :

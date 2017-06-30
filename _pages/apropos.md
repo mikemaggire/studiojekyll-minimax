@@ -1,7 +1,8 @@
 ---
 layout: page
+permalink: /a-propos.html
+sidebar: A propos
 title: A propos
-permalink: /apropos.html
 ---
 
 Ce site est le site modèle de _StudioJekyll_. Vous pouvez le cloner et l'utiliser pour créer rapidement votre propre site à l'aide de **VSCode** sous **Windows**.

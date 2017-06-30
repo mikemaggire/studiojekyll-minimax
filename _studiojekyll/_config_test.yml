@@ -14,12 +14,10 @@ baseurl: /web_acceptance/studiojekyll-minimax
 ########################
 
 # Configuration des variables pour génerer le site dans une version prête à être déployée sur un serveur de test
-JEKYLL_ENV: test
 strict_front_matter: true
 destination: _site_ready2deploy
 
 include:
- - _pages
  - .htaccess
  - openurl.bat
 

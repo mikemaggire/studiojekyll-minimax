@@ -17,7 +17,8 @@ gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "jekyll-feed", group: :jekyll_plugins
-gem "emoji_for_jekyll", group: :jekyll_plugins
-gem "jekyll-sitemap", group: :jekyll_plugins
-
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jemoji"
+  gem "jekyll-sitemap"
+end
