@@ -5,8 +5,8 @@
 # URL absolue et relative de votre site sur le machine de **TEST**
 # Vous devez configurer ces valeurs
 ########################
-url: http://bigmama/web_acceptance/studiojekyll-minimax
-baseurl: /web_acceptance/studiojekyll-minimax
+url: http://nestor
+baseurl: /acceptance/studiojekyll-minimax
  
 
 ########################
