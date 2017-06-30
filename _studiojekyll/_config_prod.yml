@@ -5,7 +5,7 @@
 # URL absolue et relative de votre site sur le machine de **PRODUCTION**
 # Vous devez configurer ces valeurs
 ########################
-url: http://wiki.maggire.net/studiojekyll-minimax
+url: http://wiki.maggire.net
 baseurl: /studiojekyll-minimax
 
 ########################
@@ -13,14 +13,8 @@ baseurl: /studiojekyll-minimax
 ########################
 
 # Configuration des variables pour génerer le site dans une version prête à être déployée sur un serveur de PRODUCTION
-JEKYLL_ENV: production
 strict_front_matter: true
 destination: _site_ready2deploy
-
-include:
- - _pages
- - .htaccess
- - openurl.bat
 
 # transpiler saas
 sass:
