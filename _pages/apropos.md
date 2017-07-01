@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /a-propos.html
-sidebar: A propos
+navbar: A propos
+navbarindex: 10
 title: A propos
 ---
 

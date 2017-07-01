@@ -94,3 +94,113 @@ img {
   background-color: #f9f9f9;
 }
 
+/*
+ * Post preview
+ *
+ */
+
+.post-preview > a {
+  color: #404040;
+}
+.post-preview > a:hover,
+.post-preview > a:focus {
+  text-decoration: none;
+}
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.post-preview > a > .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.post-preview > .post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #404040;
+}
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus {
+  color: #0085a1;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+
+/*
+ *
+ * pagination
+ *
+*/
+
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+
+.pager {
+  margin: 20px 0 0;
+}
+.pager > a,
+.pager > span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 0;
+}
+@media only screen and (min-width: 768px) {
+  .pager > a,
+  .pager > span {
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+}
+.pager > a:hover,
+.pager > a:focus {
+  color: white;
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #808080;
+  background-color: #404040;
+  cursor: not-allowed;
+}
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+img::selection {
+  color: white;
+  background: transparent;
+}
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}

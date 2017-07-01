@@ -15,19 +15,24 @@ title: Le titre de votre site
 tagline: Votre tagline
 description: Rédigez une description parlante de votre site. Vous pouvez éditer ce texte dans le fichier '_config.yml'. Il apparaitra dans les metadonnées des entêtes des pages de votre site (utilisé par le référencement Google) et dans la description de votre flux RSS. 
 
-# References de l'auteur du site
-# Seul le nom est obligatoire
-# Les id sont utilisés pour faire apparaitre mes boutons réseaux sociaux sur le site
+copyright:
+  name: Votre copyright
+  url: https://votre-domaine.com/auteur-copyright.html
+  licence: Libre de droits sous license MIT
+
 author:
   name: Votre pseudo
   url: https://twitter.com/mikemaggire
-  email: votre-email@example.com
-  twitter_id: mikemaggire
-  github_id:  mikemaggire
-  #gplus_id: +votre_id
-  #facebook_id: votre_id
-  #linkedin_id: votre_id
 
+# id utilisés pour faire apparaitre les boutons réseaux sociaux sur le site
+email: votre-email@example.com
+twitter_userid: mikemaggire
+github_userid:  mikemaggire
+#gplus_userid: +mikemaggire
+#facebook_userid: mikemaggire
+#linkedin_userid: mikemaggire
+
+############################################################ URL SITE
 # A noter que l'URL de votre site publié doit être configurer dans le fichier 
 # de configuration des publication, _config_test.yml et _config_prod.yml qui
 # se trouvent dans le repertoire _studiojekyll
@@ -65,15 +70,18 @@ lang: fr
 date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
+paginate: 7
+paginate_path: "/blog/pages/page:num"
 
 # le format type des permalink
-permalink: /blog/:categories/:title.html
+permalink: :categories/blog/:title.html
 
 # Extension utilisées
 plugins:
  - jekyll-feed
  - jemoji
  - jekyll-sitemap
+ - jekyll-paginate
 
 # Nous forcons le traitement de .htaccess
 include: 
@@ -82,7 +90,6 @@ include:
 # Exclusions spécifiques à VS
 # Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
 exclude: 
- - LICENSE.txt
  - TODO.md
  - README.md
  - package.json
@@ -92,12 +99,9 @@ exclude:
  - Gemfile
  - Gemfile.lock
  - node_modules
- - vendor/bundle/
- - vendor/cache/
- - vendor/gems/
- - vendor/ruby/
 
 # Traitement du repertoire _pages
 collections:
   pages:
     output: true
+    permalink: /:categories/:title.html

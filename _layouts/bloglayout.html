@@ -3,20 +3,62 @@ layout: default
 ---
 <div class="home">
   {{ content }}
-
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  <div class="post-preview">
+  {%- for post in paginator.posts -%}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
         </h2>
-      </li>
-    {%- endfor -%}
-  </ul>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
 
-  <p class="rss-subscribe">S'abonner au <a href="{{ "/feed.xml" | relative_url }}">flux RSS</a></p>
+    <p class="post-meta">
+      {% if post.date_update %}Mis à jour{% else %}Publié{% endif %}
+      {% if site.author.name %} par <a href="{{ site.baseurl }}{{ site.author.url }}">{{ site.author.name }}</a>{% endif %}
+
+    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+    {% if post.date_update %}
+        le {{ post.date_update | date: date_format }}
+    {% else %}
+        {% if post.date %}
+            le {{ post.date | date: date_format }}
+        {% endif %}
+    {% endif %}
+    </p>
+
+    <div class="tagline">
+    {% for tag in page.tags %}
+        • <a href="{{ site.baseurl }}/tags.html#{{ tag | slugize }}">{{ tag }}</a>
+    {% endfor %}
+    </div>
+
+  {%- endfor -%}
+  </div>
+
+  <hr>
+
+  <!-- Pager -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pager">
+        {% if paginator.previous_page %}
+        <span class="previous">
+            <a href="{{ site.baseurl }}{{ paginator.previous_page_path}}/index.html">&larr; Article précédent</a>
+        </span>
+        {% endif %}
+        {% if paginator.next_page %}
+        <span class="next">
+            <a href="{{ site.baseurl }}{{ paginator.next_page_path }}/index.html">Article suivant &rarr;</a>
+        </span>
+        {% endif %}
+    </div>
+    <hr>
+    {% endif %}
+
+<p></p>
+<p class="rss-subscribe">S'abonner au <a href="{{ "/feed.xml" | relative_url }}">flux RSS</a></p>
 
 </div>
