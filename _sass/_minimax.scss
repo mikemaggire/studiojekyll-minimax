@@ -126,13 +126,6 @@ img {
   color:  #2C81D1;
 }
 
-/*.post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-}*/
-
 .post-meta {
 /*  display: inline;*/
   margin-top: -.5rem;
@@ -202,24 +195,3 @@ img {
   cursor: not-allowed;
 }
 
-/*::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #0085a1;
-}
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: #0085a1;
-
-img::selection {
-  color: white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
-}*/

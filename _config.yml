@@ -95,6 +95,10 @@ plugins:
 include: 
   - .htaccess
 
+# transpiler saas
+sass:
+  sass_dir: _sass
+
 # Exclusions spécifiques à VS
 # Ces fichiers ne seront pas générés dans le repertoire de destination _site ou _site2deploy
 exclude: 
