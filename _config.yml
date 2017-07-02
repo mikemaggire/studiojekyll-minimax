@@ -11,9 +11,9 @@
 # Sivous regardez dans vos fichiers HTML, vous verrez qu'ils y accedent
 # via {{ site.title }}, {{ site.email }}, et ainsi de suite.
 
-title: Le titre de votre site
-tagline: Votre tagline
-description: Rédigez une description parlante de votre site. Vous pouvez éditer ce texte dans le fichier '_config.yml'. Il apparaitra dans les metadonnées des entêtes des pages de votre site (utilisé par le référencement Google) et dans la description de votre flux RSS. 
+title: Laurent Lourenço
+tagline: Le futur /#numérique se décide maintenant. Allons-y.
+description: . 
 
 copyright:
   name: Votre copyright
