@@ -2,7 +2,7 @@
         "//": "scripts js à lancer avec la commande 'npm run ...' ou via le 'task runner' de VScode pour automatiser les build et les deploiements",
         "name": "automation-studiojekyll",
         "title": "Automation Studiojekyll",
-        "version": "0.6.0",
+        "version": "2.0.0",
         "authors": "mike.maggire",
         "scripts": {
                 "clean:jekyll": "jekyll clean && rimraf _site_ready2deploy",
@@ -19,10 +19,10 @@
                 "prebuild:prod": "npm version minor && git push origin --tags && npm run createversionfile",
                 "build:prod": "SET JEKYLL_ENV=production&& npm run build:deploy -- --config _config.yml,_studiojekyll\\_config_prod.yml,_studiojekyll\\_version.yml",
                 "predeploy:test": "npm run build:test",
-                "deploy:test": ".\\_studiojekyll\\deploy2test.bat",
+                "deploy:test": ".\\_studiojekyll\\deploy2test-llpro.bat",
                 "postdeploy:test": ".\\_site_ready2deploy\\openurl.bat",
                 "predeploy:prod": "npm run build:prod",
-                "deploy:prod": ".\\_studiojekyll\\deploy2prod.bat",
+                "deploy:prod": ".\\_studiojekyll\\deploy2prod-llpro.bat",
                 "postdeploy:prod": ".\\_site_ready2deploy\\openurl.bat"
         },
         "dependencies": {

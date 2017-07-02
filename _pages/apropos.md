@@ -5,8 +5,11 @@ navbarindex: 10
 title: A propos
 ---
 
-Ce site est le site modèle de _StudioJekyll_. Vous pouvez le cloner et l'utiliser pour créer rapidement votre propre site à l'aide de **VSCode** sous **Windows**.
+Passionné d’informatique et d’électronique dès mon plus jeune âge, j’aime explorer les technologies qui vont changer notre futur et celui de nos organisations.
 
-Vous trouverez des informations pour le personnaliser, ainsi que la documentation au sujet de StudioJekyll sur [blogging StudioJekyll](http://wiki.maggire.net/blogging-studio-jekyll/)
+Cela tombe bien la révolution numérique est en marche. ;-)
 
-Le code source de `Minimax` est sur GitHub: [StudioJekyll minimax](https://github.com/mikemaggire/minimax)
+Cela me permets d'être un réel moteur dans la conception des systèmes et des processus qui permettent de répondre à la stratégie et aux enjeux actuels des entreprises.
+
+Le futur #numerique se décide maintenant. Allons-y !
+

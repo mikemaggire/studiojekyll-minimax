@@ -12,25 +12,25 @@
 # via {{ site.title }}, {{ site.email }}, et ainsi de suite.
 
 title: Laurent Lourenço
-tagline: Le futur /#numérique se décide maintenant. Allons-y.
-description: . 
+tagline: Le futur numérique se décide maintenant. Allons-y.
+description: Reflexions autour du numérique, et des changements qu'il induit dans la Société.
 
 copyright:
-  name: Votre copyright
-  url: https://votre-domaine.com/auteur-copyright.html
-  licence: Libre de droits sous license MIT
+  name: msft
+  url: http://www.msft-consulting.com
+  licence: Tous droits réservés.
 
 author:
-  name: Votre pseudo
-  url: https://twitter.com/mikemaggire
+  name: Laurent Lourenço
+  url: https://twitter.com/laurentlourenco
 
 # id utilisés pour faire apparaitre les boutons réseaux sociaux sur le site
-email: votre-email@example.com
-twitter_userid: mikemaggire
-github_userid:  mikemaggire
+email: contact@lourenco.pro
+twitter_userid: laurentlourenco
+#github_userid:  mikemaggire
 #gplus_userid: +mikemaggire
 #facebook_userid: mikemaggire
-#linkedin_userid: mikemaggire
+linkedin_userid: laurentlourenco
 
 ############################################################ URL SITE
 # A noter que l'URL de votre site publié doit être configurer dans le fichier 
