@@ -1,17 +1,11 @@
-# Readme Minimax Studio Jekyll
+# Readme laurentlourenco.pro
 
-Ce repository contient le modèle de site Minimax à utiliser avec StudioJekyll.
+Ce repository contient les sources du site web perso de mon ami Laurent Lourenço.
+Le site est generé avec StudioJekyll V0.5, dans un environnement Visual Studio Code sous Windows 10 et utilise Jekyll3.5.
 
 Pour savoir comment l'utiliser : [Bloggez avec Studio Jekyll sous Windows](http://wiki.maggire.net/blogging-studio-jekyll)
 
-## Utilisation
-
-- Forkez ce repo et créez votre propre site. 
-
-
-## Prerequis
-
-- environnement StudioJekyll installé sur votre machine sous Windows.
+Le résultat est visible ici http://www.laurentlourenco.pro
 
 --------------
 
@@ -24,5 +18,3 @@ Pour savoir comment l'utiliser : [Bloggez avec Studio Jekyll sous Windows](http:
 ## License
 
 Open sources, sous [licence MIT](LICENSE.txt).
-
-Le design s'inspire grandement du [thème Jekyll Lanyon] https://github.com/poole/lanyon
