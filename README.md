@@ -6,12 +6,12 @@ Pour savoir comment l'utiliser : [Bloggez avec Studio Jekyll sous Windows](http:
 
 ## Utilisation
 
-- Forkez ce repo et créer votre propre site. 
+- Forkez ce repo et créez votre propre site. 
 
 
 ## Prerequis
 
-- l'environnement StudioJekyll installé sur votre machine sous Windows.
+- environnement StudioJekyll installé sur votre machine sous Windows.
 
 --------------
 
