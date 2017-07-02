@@ -5,8 +5,8 @@
 # URL absolue et relative de votre site sur le machine de **PRODUCTION**
 # Vous devez configurer ces valeurs
 ########################
-url: http://wiki.maggire.net
-baseurl: /studiojekyll-minimax
+url: http://www.laurentlourenco.pro
+baseurl: ''
 
 ########################
 # Les variables suivantes ne sont pas à modifier
