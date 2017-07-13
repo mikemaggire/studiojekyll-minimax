@@ -1,7 +1,7 @@
 ---
 layout: page
 navbar: Bibliographie
-Title: A lire
+title: A lire
 ---
 
 ### Sapiens - Une brève histoire de l'humanité
