@@ -82,7 +82,7 @@ markdown: kramdown
 paginate_path: "/blog/pages/page:num"
 
 # le format type des permalink
-permalink: :categories/blog/:title.html
+permalink: /:categories/blog/:title.html
 
 # Extension utilisées
 plugins:
