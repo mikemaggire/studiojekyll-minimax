@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marche du numerique Nantais
-subtitle: TODO: pays de la loire plus globalement
+subtitle: pays de la loire plus globalement
 ---
 
 Le marché du numérique n'est pas local, il est globale, sous entendu mondial, voir interplanétaire (le numérique va sur mars)
