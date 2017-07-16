@@ -22,19 +22,6 @@
 
 ## CSS Design
 
-- link in bold in minimax
 - creae a gross theme, root for all others, based on bootstrap & angular4
-- recreate minimax theme based on grossy
-- $themecolor-texte, which is $themecolor by default
-- $themecolor-texture
 - replace footnotes by tooltips (with angular)
 - emotji customizable
-
-## Refactoring
-
-- Branch Structure
-  ![brancstructure.jpg]({{ site.baseurl }}/assets/img/brancstructure.jpg)
-
-## Issues
-
-- filename is note overridden with YAML frontmatter
