@@ -11,7 +11,6 @@
             }
         },
         {
-            "identifier": "liverender",
             "label": "sjekyll live rendering",
             "type": "npm",
             "script": "liverender",
@@ -38,15 +37,9 @@
             "problemMatcher": []
         },
         {
-            "label": "sjekyll deploy to TEST env.",
+            "label": "sjekyll build PROD env.",
             "type": "npm",
-            "script": "deploy:test",
-            "problemMatcher": []
-        },
-        {
-            "label": "sjekyll deploy to PROD env.",
-            "type": "npm",
-            "script": "deploy:prod",
+            "script": "build:prod", 
             "problemMatcher": []
         }
     ]

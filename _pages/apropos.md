@@ -1,7 +1,7 @@
 ---
 layout: page
 navbar: A propos
-navbarindex: 10
+navbarindex: 90
 title: A propos
 ---
 
@@ -11,4 +11,3 @@ Vous trouverez des informations pour le personnaliser, ainsi que la documentatio
 
 Le code source de `Minimax` est sur GitHub: [StudioJekyll minimax](https://github.com/mikemaggire/studiojekyll-minimax)
 
-La texture du fond est fournie par [SubtlePatterns](https://www.toptal.com/designers/subtlepatterns/) sous licence [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)

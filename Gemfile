@@ -9,7 +9,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.5.0"
+gem "jekyll", "3.8.5"
 
 # required by windows to ensure proper --watch
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?

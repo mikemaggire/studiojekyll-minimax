@@ -10,7 +10,10 @@
 # C'est ici que vous définissez les paramètres initiaux de vore nouveau site. 
 # Sivous regardez dans vos fichiers HTML, vous verrez qu'ils y accedent
 # via {{ site.title }}, {{ site.email }}, et ainsi de suite.
+# shortname must be 12 car max
 
+brand: Votre Marque
+shortname: monSite
 title: Le titre de votre site
 tagline: Votre tagline
 description: Rédigez une description parlante de votre site. Vous pouvez éditer ce texte dans le fichier '_config.yml'. Il apparaitra dans les metadonnées des entêtes des pages de votre site (utilisé par le référencement Google) et dans la description de votre flux RSS. 
@@ -32,18 +35,37 @@ github_userid:  mikemaggire
 #facebook_userid: mikemaggire
 #linkedin_userid: mikemaggire
 
+############################################################ SHARE THIS
+share_by_twitter: true
+share_by_linkedin: true
+share_by_facebook: true
+
+############################################################ THEME GRAPHIQUE
+# Personalisez le theme graphique de votre site
+# certaines couleurs sont prédéfinies dans le fichier _sass/_newcolors.scss
+# primarycolor est utilisé pour le fond de la barre de navigation.
+# par default primarycolor est $color-aqua
+# secondarycolor est utilisé pour les liens URL
+# par defaut secondarycolor est égale à primarycolor 
+# mais vous pouvez choisir n'importe quelle couleur au format CSS : https://www.w3schools.com/cssref/css_colors_legal.asp
+# Par default la couleur principale est 'grey', sans texture de fond et une couleur de fond 'white'
+# Pour choissir une texture pour le fond : https://www.toptal.com/designers/subtlepatterns/
+# puis ajoutez l'image dans le repertoire 'assets/img'
+
+#graphicaltheme:
+#  primarycolor: '#375BB0'
+#  secondarycolor: '#B2A37B'
+#  backgroundtexture: white_wall.png
+#masthead-bgcolor: 'white'
+
+
 ############################################################ URL SITE
 # A noter que l'URL de votre site publié doit être configurer dans le fichier 
 # de configuration des publication, _config_test.yml et _config_prod.yml qui
 # se trouvent dans le repertoire _studiojekyll
 
 ############################################################ VERSION
-# NOTA : Le numéro de version V:x.y.z du site est géré automatiquement 
-# au moment du deploiement en test et en prod
-# Le numéro z est incrémenté à chaque build de l'environnement de test
-# Le numéro y est incrémenté à chaque build de l'environnement de prod
-# Pour incrémenter le numéro de version majeur (x), utilisez la commande
-# 'npm version major' en ouvrant une console au niveau du repertoire racine de votre sire
+# Pour incrémenter le numéro de version, modifiez le fichier _version.yml 
 
 ############################################################ COMMENTAIRES
 # Pour activer DISQUS à la fin des articles 
@@ -64,6 +86,8 @@ github_userid:  mikemaggire
 # Défini si la bar denavigation doit inclure un lien vers /blog/index.html
 # Utile si la page principale de votre site n'affiche pas le blog
 showbloginnavbar: false
+#showbloginnavbar: /blog/index.html
+#showbloginnavbar: /index.html
 
 # nombre maximum d'articles sur la page de blog
 paginate: 7
@@ -80,6 +104,7 @@ date_format: "%d/%m/%Y"
 timezone: Europe/Paris
 markdown: kramdown
 paginate_path: "/blog/pages/page:num"
+excerpt_separator: ""
 
 # le format type des permalink
 permalink: :categories/blog/:title.html
@@ -87,13 +112,14 @@ permalink: :categories/blog/:title.html
 # Extension utilisées
 plugins:
  - jekyll-feed
- - jemoji
  - jekyll-sitemap
  - jekyll-paginate
+ - jemoji
 
 # Nous forcons le traitement de .htaccess
 include: 
   - .htaccess
+  - robots.txt
 
 # transpiler saas
 sass:
@@ -106,11 +132,10 @@ exclude:
  - README.md
  - package.json
  - bs-config.json
- - deploy2prod.bat
- - deploy2test.bat
  - Gemfile
  - Gemfile.lock
  - node_modules
+ - .bat
 
 # Traitement du repertoire _pages
 collections:

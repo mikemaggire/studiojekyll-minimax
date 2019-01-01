@@ -5,7 +5,7 @@
 # URL absolue et relative de votre site sur le machine de **PRODUCTION**
 # Vous devez configurer ces valeurs
 ########################
-url: http://wiki.maggire.net
+url: https://mikemaggire.github.io
 baseurl: /studiojekyll-minimax
 
 ########################
@@ -14,7 +14,9 @@ baseurl: /studiojekyll-minimax
 
 # Configuration des variables pour génerer le site dans une version prête à être déployée sur un serveur de PRODUCTION
 strict_front_matter: true
-destination: _site_ready2deploy
+
+#docs is the path used by githubpages
+destination: docs
 
 # transpiler saas
 sass:
