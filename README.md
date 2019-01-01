@@ -2,7 +2,7 @@
 
 Ce repository contient le modèle de site Minimax à utiliser avec StudioJekyll.
 
-Pour savoir comment l'utiliser : [Bloggez avec Studio Jekyll sous Windows](http://wiki.maggire.net/blogging-studio-jekyll)
+Pour savoir comment l'utiliser : [Bloggez avec Studio Jekyll sous Windows](https://mikemaggire.github.io/blogging-studio-jekyll)
 
 ## Utilisation
 
